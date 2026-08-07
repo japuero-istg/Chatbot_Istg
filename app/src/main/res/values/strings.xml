@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Emprende ISTG</string>
+    <string name="app_header_title">Emprende ISTG - Asistente</string>
+    <string name="main_menu">Menú Principal</string>
+    <string name="checking_model">Verificando modelo local…</string>
+    <string name="downloading_model">Descargando modelo de IA (%d%%)…</string>
+    <string name="ask_anything">Pregúntame lo que quieras</string>
+    <string name="assistant">Asistente</string>
+    <string name="assistant_description">Asistente de Emprende ISTG</string>
+    <string name="direct_question">Pregunta directa</string>
+    <string name="timer_format">⏱ %.1f s</string>
+    <string name="go_back_home">Volver al menú</string>
+    <string name="enable_voice">Activar voz</string>
+    <string name="mute_voice">Silenciar voz</string>
+    <string name="send">Enviar</string>
+    <string name="splash_hint">Toca en cualquier parte para comenzar</string>
+</resources>

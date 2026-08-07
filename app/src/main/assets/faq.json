@@ -1,0 +1,897 @@
+[
+  {
+    "id": 1,
+    "section": "Información General",
+    "question": "¿Qué es Emprende ISTG?",
+    "answer": "Emprende ISTG es una aplicación móvil para conectar emprendedores del Instituto Superior Tecnológico Guayaquil (ISTG). Permite publicar negocios, calificar, comentar, guardar favoritos y recibir ofertas push con notificaciones en tiempo real.",
+    "keywords": [
+      "emprende",
+      "istg"
+    ]
+  },
+  {
+    "id": 2,
+    "section": "Información General",
+    "question": "¿Para qué sirve la aplicación?",
+    "answer": "La app sirve para que estudiantes y docentes del ISTG puedan crear, descubrir y promocionar negocios dentro de la comunidad institucional.",
+    "keywords": [
+      "sirve",
+      "aplicacion"
+    ]
+  },
+  {
+    "id": 3,
+    "section": "Información General",
+    "question": "¿Quiénes pueden usar la app?",
+    "answer": "Estudiantes (@est.istg.edu.ec) y docentes (@istg.edu.ec) del Instituto Superior Tecnológico Guayaquil. También pueden acceder usuarios con correo Gmail, pero se les recomienda usar su correo institucional.",
+    "keywords": [
+      "quienes",
+      "pueden",
+      "usar",
+      "app"
+    ]
+  },
+  {
+    "id": 4,
+    "section": "Información General",
+    "question": "¿Es gratis?",
+    "answer": "Sí, la aplicación es completamente gratuita.",
+    "keywords": [
+      "gratis"
+    ]
+  },
+  {
+    "id": 5,
+    "section": "Información General",
+    "question": "¿Qué requisitos necesito?",
+    "answer": "- Un dispositivo Android con versión 10 o superior - Conexión a internet - Una cuenta de Google - Correo institucional ISTG (recomendado)",
+    "keywords": [
+      "requisitos",
+      "necesito"
+    ]
+  },
+  {
+    "id": 6,
+    "section": "Registro e Inicio de Sesión",
+    "question": "¿Cómo me registro?",
+    "answer": "Descarga la app, ábrela y presiona el botón \"Ingresar con Google\". Selecciona tu cuenta de Google y la app verificará tu correo automáticamente.",
+    "keywords": [
+      "registro",
+      "inscribirme",
+      "cuenta",
+      "registrarme",
+      "crear"
+    ]
+  },
+  {
+    "id": 7,
+    "section": "Registro e Inicio de Sesión",
+    "question": "¿Puedo usar mi correo personal (@gmail.com)?",
+    "answer": "Sí, la app acepta correos Gmail, pero se recomienda usar tu correo institucional (@est.istg.edu.ec o @istg.edu.ec) para estar dentro de la comunidad ISTG.",
+    "keywords": [
+      "usar",
+      "correo",
+      "personal",
+      "gmail",
+      "com"
+    ]
+  },
+  {
+    "id": 8,
+    "section": "Registro e Inicio de Sesión",
+    "question": "¿Qué correo debo usar?",
+    "answer": "- Si eres estudiante: tu correo terminado en @est.istg.edu.ec - Si eres docente: tu correo terminado en @istg.edu.ec - También se aceptan correos @gmail.com",
+    "keywords": [
+      "correo",
+      "debo",
+      "usar"
+    ]
+  },
+  {
+    "id": 9,
+    "section": "Registro e Inicio de Sesión",
+    "question": "¿Qué hago si no puedo iniciar sesión?",
+    "answer": "Verifica que tengas conexión a internet y que tu cuenta de Google esté activa. Si el problema persiste, contacta al administrador.",
+    "keywords": [
+      "iniciar",
+      "sesion"
+    ]
+  },
+  {
+    "id": 10,
+    "section": "Registro e Inicio de Sesión",
+    "question": "¿Cómo ciero sesión?",
+    "answer": "Ve a Menú lateral (tres líneas) → Cerrar sesión.",
+    "keywords": [
+      "ciero",
+      "sesion"
+    ]
+  },
+  {
+    "id": 11,
+    "section": "Registro e Inicio de Sesión",
+    "question": "¿Puedo usar la app sin iniciar sesión?",
+    "answer": "Sí, puedes acceder como invitado desde el botón \"Invitado\" en la pantalla de login. Como invitado puedes ver los negocios publicados pero no puedes calificar, comentar, guardar favoritos ni publicar negocios.",
+    "keywords": [
+      "usar",
+      "app",
+      "iniciar",
+      "sesion"
+    ]
+  },
+  {
+    "id": 12,
+    "section": "Mi Perfil",
+    "question": "¿Cómo creo mi perfil?",
+    "answer": "Tu perfil se crea automáticamente al iniciar sesión con Google. Puedes editarlo desde Menú lateral → Mi Perfil.",
+    "keywords": [
+      "creo",
+      "perfil",
+      "cuenta",
+      "datos"
+    ]
+  },
+  {
+    "id": 13,
+    "section": "Mi Perfil",
+    "question": "¿Cómo edito mis datos?",
+    "answer": "Ve a Menú lateral → Mi Perfil → presiona el ícono de editar. Puedes modificar tu nombre, correo, teléfono, cédula y redes sociales.",
+    "keywords": [
+      "edito",
+      "datos",
+      "cuenta",
+      "perfil"
+    ]
+  },
+  {
+    "id": 14,
+    "section": "Mi Perfil",
+    "question": "¿Cómo cambio mi foto de perfil?",
+    "answer": "En Mi Perfil, presiona sobre tu foto actual y selecciona una nueva imagen de tu galería.",
+    "keywords": [
+      "cambio",
+      "foto",
+      "perfil",
+      "cuenta",
+      "datos"
+    ]
+  },
+  {
+    "id": 15,
+    "section": "Mi Perfil",
+    "question": "¿Qué redes sociales puedo vincular?",
+    "answer": "Puedes vincular: - Facebook - Instagram - TikTok - Número de WhatsApp",
+    "keywords": [
+      "redes",
+      "sociales",
+      "vincular"
+    ]
+  },
+  {
+    "id": 16,
+    "section": "Mi Perfil",
+    "question": "¿Cómo agrego mi número de WhatsApp?",
+    "answer": "En Mi Perfil, busca el campo \"WhatsApp\" y escribe tu número con código de país (ej: 593991234567).",
+    "keywords": [
+      "agrego",
+      "numero",
+      "whatsapp"
+    ]
+  },
+  {
+    "id": 17,
+    "section": "Negocios",
+    "question": "¿Cómo publico mi negocio?",
+    "answer": "Ve a Menú lateral → Mis Negocios → presiona el botón \"+\" (agregar). Completa todos los campos: nombre del local, descripción, categoría, dirección, horario, productos/servicios e imagen.",
+    "keywords": [
+      "publico",
+      "negocio",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "negocios"
+    ]
+  },
+  {
+    "id": 18,
+    "section": "Negocios",
+    "question": "¿Qué datos necesito para crear una publicación?",
+    "answer": "- Nombre del local - Descripción del negocio - Categoría (seleccionar del menú) - Dirección - Horario de atención - Descripción de productos/servicios con precios - Imagen del negocio - Imagen de catálogo (opcional) - Número de WhatsApp (opcional)",
+    "keywords": [
+      "datos",
+      "necesito",
+      "crear",
+      "publicacion",
+      "promocionar",
+      "perfil",
+      "publicar",
+      "registrarme",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "cuenta",
+      "montar",
+      "registro",
+      "emprender",
+      "inscribirme",
+      "tienda",
+      "emprendimientos",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocio",
+      "negocios"
+    ]
+  },
+  {
+    "id": 19,
+    "section": "Negocios",
+    "question": "¿Qué son las categorías?",
+    "answer": "Las categorías son clasificaciones para organizar los negocios. Ejemplos: Comida, Tecnología, Servicios, Ropa, etc. Las categorías las gestiona el administrador.",
+    "keywords": [
+      "categorias"
+    ]
+  },
+  {
+    "id": 20,
+    "section": "Negocios",
+    "question": "¿Cómo edito mi negocio?",
+    "answer": "Ve a Mis Negocios, busca tu publicación y presiona el ícono de editar (lápiz).",
+    "keywords": [
+      "edito",
+      "negocio",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocios"
+    ]
+  },
+  {
+    "id": 21,
+    "section": "Negocios",
+    "question": "¿Cómo elimino mi negocio?",
+    "answer": "Ve a Mis Negocios, busca tu publicación y presiona el ícono de eliminar (basura). Se marcará como \"Rechazado\" (eliminación lógica).",
+    "keywords": [
+      "elimino",
+      "negocio",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocios"
+    ]
+  },
+  {
+    "id": 22,
+    "section": "Negocios",
+    "question": "¿Por qué mi negocio está \"Pendiente\"?",
+    "answer": "Cuando publicas un negocio, este queda en estado Pendiente hasta que un administrador lo revise y lo apruebe. Este proceso puede tardar.",
+    "keywords": [
+      "negocio",
+      "pendiente",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocios"
+    ]
+  },
+  {
+    "id": 23,
+    "section": "Negocios",
+    "question": "¿Qué significa \"Aprobado\" y \"Rechazado\"?",
+    "answer": "- Aprobado: Un administrador revisó tu negocio y lo aprobó. Aparece visible para todos los usuarios. - Rechazado: Un administrador rechazó tu negocio o lo eliminó. No es visible para otros usuarios.",
+    "keywords": [
+      "significa",
+      "aprobado",
+      "rechazado"
+    ]
+  },
+  {
+    "id": 24,
+    "section": "Búsqueda y Exploración",
+    "question": "¿Cómo busco negocios?",
+    "answer": "Ve a Menú lateral → Búsqueda. Escribe el nombre del negocio en la barra de búsqueda. La búsqueda muestra negocios que empiecen con las letras que escribes.",
+    "keywords": [
+      "busco",
+      "negocios",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocio"
+    ]
+  },
+  {
+    "id": 25,
+    "section": "Búsqueda y Exploración",
+    "question": "¿Cómo filtro por categoría?",
+    "answer": "En la pantalla de Búsqueda, usa el menú desplegable (Spinner) para seleccionar una categoría. Se mostrarán solo los negocios de esa categoría.",
+    "keywords": [
+      "filtro",
+      "categoria"
+    ]
+  },
+  {
+    "id": 26,
+    "section": "Búsqueda y Exploración",
+    "question": "¿Qué hace el buscador?",
+    "answer": "El buscador filtra negocios por nombre y categoría simultáneamente. Si seleccionas una categoría y escribes texto, mostrará negocios de esa categoría cuyo nombre empiece con lo que escribiste.",
+    "keywords": [
+      "hace",
+      "buscador"
+    ]
+  },
+  {
+    "id": 27,
+    "section": "Búsqueda y Exploración",
+    "question": "¿Cómo veo los detalles de un negocio?",
+    "answer": "En el Home o en Búsqueda, presiona sobre la tarjeta del negocio para ver todos sus detalles: descripción, horario, productos, ubicación y calificaciones.",
+    "keywords": [
+      "veo",
+      "detalles",
+      "negocio",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocios"
+    ]
+  },
+  {
+    "id": 28,
+    "section": "Favoritos",
+    "question": "¿Cómo guardo un negocio en favoritos?",
+    "answer": "En el Home, presiona el ícono de corazón en la tarjeta del negocio que deseas guardar.",
+    "keywords": [
+      "guardo",
+      "negocio",
+      "favoritos",
+      "promocionar",
+      "publicar",
+      "guardados",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "guardar",
+      "favorito",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "guardado",
+      "publico",
+      "negocios"
+    ]
+  },
+  {
+    "id": 29,
+    "section": "Favoritos",
+    "question": "¿Dónde veo mis favoritos?",
+    "answer": "Ve a Menú lateral → Mis Favoritos. Se muestran en formato cuadrícula (2 columnas).",
+    "keywords": [
+      "donde",
+      "veo",
+      "favoritos",
+      "guardados",
+      "guardar",
+      "guardado",
+      "favorito"
+    ]
+  },
+  {
+    "id": 30,
+    "section": "Favoritos",
+    "question": "¿Cómo elimino un favorito?",
+    "answer": "En Mis Favoritos, presiona el ícono de corazón lleno sobre el negocio que deseas quitar.",
+    "keywords": [
+      "elimino",
+      "favorito",
+      "guardar",
+      "favoritos",
+      "guardados",
+      "guardado"
+    ]
+  },
+  {
+    "id": 31,
+    "section": "Calificaciones y Comentarios",
+    "question": "¿Cómo califico un negocio?",
+    "answer": "En los detalles del negocio, presiona el ícono de estrella. Selecciona entre 1 y 5 estrellas (caritas de enfadado a muy feliz).",
+    "keywords": [
+      "califico",
+      "negocio",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocios"
+    ]
+  },
+  {
+    "id": 32,
+    "section": "Calificaciones y Comentarios",
+    "question": "¿Cómo escribo un comentario?",
+    "answer": "Después de calificar, escribe tu comentario en el campo de texto y presiona Publicar.",
+    "keywords": [
+      "escribo",
+      "comentario",
+      "opinar",
+      "escribir",
+      "comentarios"
+    ]
+  },
+  {
+    "id": 33,
+    "section": "Calificaciones y Comentarios",
+    "question": "¿Puedo eliminar mi comentario?",
+    "answer": "Actualmente no está disponible la opción de eliminar comentarios individualmente.",
+    "keywords": [
+      "eliminar",
+      "comentario",
+      "opinar",
+      "escribir",
+      "comentarios"
+    ]
+  },
+  {
+    "id": 34,
+    "section": "Calificaciones y Comentarios",
+    "question": "¿Qué son las palabras prohibidas (BannedWords)?",
+    "answer": "Son palabras que el administrador ha bloqueado. Si intentas publicar un comentario con una palabra prohibida, no se guardará y recibirás un aviso.",
+    "keywords": [
+      "palabras",
+      "prohibidas",
+      "bannedwords"
+    ]
+  },
+  {
+    "id": 35,
+    "section": "Calificaciones y Comentarios",
+    "question": "¿Qué pasa si uso una palabra prohibida?",
+    "answer": "El sistema detecta la palabra y muestra un mensaje de error indicando que el comentario contiene contenido no permitido. El comentario no se publica.",
+    "keywords": [
+      "pasa",
+      "uso",
+      "palabra",
+      "prohibida"
+    ]
+  },
+  {
+    "id": 36,
+    "section": "Ofertas Push",
+    "question": "¿Qué son las ofertas push?",
+    "answer": "Son promociones que los emprendedores crean para sus negocios. Cuando una oferta se publica, todos los usuarios interesados reciben una notificación push en tiempo real.",
+    "keywords": [
+      "ofertas",
+      "push",
+      "promociones",
+      "oferta",
+      "descuentos",
+      "promocion",
+      "descuento"
+    ]
+  },
+  {
+    "id": 37,
+    "section": "Ofertas Push",
+    "question": "¿Cómo creo una oferta?",
+    "answer": "Ve a Mis Negocios → selecciona tu negocio → pestaña Ofertas → presiona \"Crear Oferta\". Completa: título, descripción, duración y imagen.",
+    "keywords": [
+      "creo",
+      "oferta",
+      "descuento",
+      "promociones",
+      "ofertas",
+      "descuentos",
+      "promocion"
+    ]
+  },
+  {
+    "id": 38,
+    "section": "Ofertas Push",
+    "question": "¿Cómo me interesa en una oferta?",
+    "answer": "Ve al Muro de Ofertas o a Ofertas Diarias, busca una oferta que te guste y presiona el botón \"Me interesa\". El emprendedor recibirá una notificación con tus datos de contacto.",
+    "keywords": [
+      "interesa",
+      "oferta",
+      "promociones",
+      "ofertas",
+      "descuentos",
+      "promocion",
+      "descuento"
+    ]
+  },
+  {
+    "id": 39,
+    "section": "Ofertas Push",
+    "question": "¿Cómo recibo notificaciones de ofertas?",
+    "answer": "Las notificaciones se reciben automáticamente. Asegúrate de tener activadas las notificaciones en tu dispositivo. La app suscribe automáticamente al topic \"ofertas\".",
+    "keywords": [
+      "recibo",
+      "notificaciones",
+      "ofertas",
+      "promociones",
+      "oferta",
+      "alerta",
+      "avisos",
+      "alertas",
+      "descuentos",
+      "notificacion",
+      "promocion",
+      "descuento",
+      "aviso"
+    ]
+  },
+  {
+    "id": 40,
+    "section": "Ofertas Push",
+    "question": "¿Cómo veo las ofertas activas?",
+    "answer": "Ve a Menú lateral → Muro de Ofertas para ver todas las ofertas activas de todos los negocios.",
+    "keywords": [
+      "veo",
+      "ofertas",
+      "activas",
+      "promociones",
+      "oferta",
+      "descuentos",
+      "promocion",
+      "descuento"
+    ]
+  },
+  {
+    "id": 41,
+    "section": "Ofertas Push",
+    "question": "¿Qué pasa con las ofertas expiradas?",
+    "answer": "Las ofertas que pasan su fecha de expiración se archivan automáticamente en el historial y ya no son visibles para los clientes.",
+    "keywords": [
+      "pasa",
+      "ofertas",
+      "expiradas",
+      "promociones",
+      "oferta",
+      "descuentos",
+      "promocion",
+      "descuento"
+    ]
+  },
+  {
+    "id": 42,
+    "section": "Notificaciones",
+    "question": "¿Cómo activo las notificaciones?",
+    "answer": "Las notificaciones se activan automáticamente al iniciar sesión. Si no las recibes, verifica en la configuración de tu dispositivo que la app tenga permiso para enviar notificaciones.",
+    "keywords": [
+      "activo",
+      "notificaciones",
+      "alerta",
+      "avisos",
+      "alertas",
+      "notificacion",
+      "aviso"
+    ]
+  },
+  {
+    "id": 43,
+    "section": "Notificaciones",
+    "question": "¿Qué tipo de notificaciones recibo?",
+    "answer": "- Notificaciones de ofertas push (cuando un negocio crea una oferta) - Notificaciones de interesados (cuando alguien muestra interés en tu oferta)",
+    "keywords": [
+      "tipo",
+      "notificaciones",
+      "recibo",
+      "alerta",
+      "avisos",
+      "alertas",
+      "notificacion",
+      "aviso"
+    ]
+  },
+  {
+    "id": 44,
+    "section": "Notificaciones",
+    "question": "¿Cómo dejo de recibir notificaciones?",
+    "answer": "Puedes desactivar las notificaciones desde la configuración de tu dispositivo: Ajustes → Aplicaciones → Emprende ISTG → Notificaciones.",
+    "keywords": [
+      "dejo",
+      "recibir",
+      "notificaciones",
+      "alerta",
+      "avisos",
+      "alertas",
+      "notificacion",
+      "aviso"
+    ]
+  },
+  {
+    "id": 45,
+    "section": "Modo Invitado",
+    "question": "¿Qué puedo hacer como invitado?",
+    "answer": "- Ver el feed de negocios aprobados (Home) - Explorar negocios en la búsqueda",
+    "keywords": [
+      "hacer",
+      "invitado",
+      "cuenta",
+      "sin",
+      "visitante"
+    ]
+  },
+  {
+    "id": 46,
+    "section": "Modo Invitado",
+    "question": "¿Qué no puedo hacer como invitado?",
+    "answer": "- Calificar o comentar negocios - Guardar favoritos - Publicar negocios - Crear ofertas - Editar perfil - Acceder al panel de administrador",
+    "keywords": [
+      "hacer",
+      "invitado",
+      "cuenta",
+      "sin",
+      "visitante"
+    ]
+  },
+  {
+    "id": 47,
+    "section": "Modo Invitado",
+    "question": "¿Cómo me registro desde el modo invitado?",
+    "answer": "Presiona \"Volver al login\" o cierra y vuelve a abrir la app. Serás redirigido a la pantalla de inicio de sesión con Google.",
+    "keywords": [
+      "registro",
+      "desde",
+      "modo",
+      "invitado",
+      "inscribirme",
+      "registrarme",
+      "sin",
+      "crear",
+      "cuenta",
+      "visitante"
+    ]
+  },
+  {
+    "id": 48,
+    "section": "Administración (Para administradores)",
+    "question": "¿Cómo apruebo un negocio?",
+    "answer": "Ve a Menú lateral → Opciones de Administrador → Revisar Solicitudes. Selecciona una solicitud pendiente y presiona \"Aprobar\".",
+    "keywords": [
+      "apruebo",
+      "negocio",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocios"
+    ]
+  },
+  {
+    "id": 49,
+    "section": "Administración (Para administradores)",
+    "question": "¿Cómo rechazo un negocio?",
+    "answer": "En Revisar Solicitudes, selecciona una solicitud y presiona \"Rechazar\". Puedes agregar un comentario explicando el motivo.",
+    "keywords": [
+      "rechazo",
+      "negocio",
+      "promocionar",
+      "publicar",
+      "emprendedor",
+      "emprendimiento",
+      "anunciar",
+      "montar",
+      "emprender",
+      "tienda",
+      "emprendimientos",
+      "crear",
+      "emprendedores",
+      "anuncio",
+      "vender",
+      "publico",
+      "negocios"
+    ]
+  },
+  {
+    "id": 50,
+    "section": "Administración (Para administradores)",
+    "question": "¿Cómo gestiono las categorías?",
+    "answer": "Ve a Opciones de Administrador → Gestión de Categorías. Puedes crear, editar, activar/desactivar categorías e items.",
+    "keywords": [
+      "gestiono",
+      "categorias"
+    ]
+  },
+  {
+    "id": 51,
+    "section": "Administración (Para administradores)",
+    "question": "¿Cómo gestiono las palabras prohibidas?",
+    "answer": "Ve a Opciones de Administrador → Gestor de Palabras. Puedes agregar o eliminar palabras de la lista de prohibidas.",
+    "keywords": [
+      "gestiono",
+      "palabras",
+      "prohibidas"
+    ]
+  },
+  {
+    "id": 52,
+    "section": "Administración (Para administradores)",
+    "question": "¿Cómo veo las solicitudes pendientes?",
+    "answer": "Ve a Opciones de Administrador → Revisar Solicitudes. Se muestran todas las solicitudes con estado \"Pendiente\".",
+    "keywords": [
+      "veo",
+      "solicitudes",
+      "pendientes"
+    ]
+  },
+  {
+    "id": 53,
+    "section": "Problemas Técnicos",
+    "question": "¿La app no carga, qué hago?",
+    "answer": "1. Verifica tu conexión a internet 2. Cierra la app completamente y vuelve a abrirla 3. Si persiste, desinstala y reinstala la app",
+    "keywords": [
+      "app",
+      "carga"
+    ]
+  },
+  {
+    "id": 54,
+    "section": "Problemas Técnicos",
+    "question": "¿No recibo notificaciones, qué hago?",
+    "answer": "1. Verifica que las notificaciones estén activadas en la configuración de tu dispositivo 2. Asegúrate de haber aceptado el permiso de notificaciones al abrir la app 3. Cierra y vuelve a abrir la app para regenerar el token FCM",
+    "keywords": [
+      "recibo",
+      "notificaciones",
+      "alerta",
+      "avisos",
+      "alertas",
+      "notificacion",
+      "aviso"
+    ]
+  },
+  {
+    "id": 55,
+    "section": "Problemas Técnicos",
+    "question": "¿Las imágenes no se ven, qué hago?",
+    "answer": "1. Verifica tu conexión a internet 2. Si las imágenes son muy grandes, la app las comprime automáticamente; espera unos segundos",
+    "keywords": [
+      "imagenes",
+      "ven"
+    ]
+  },
+  {
+    "id": 56,
+    "section": "Problemas Técnicos",
+    "question": "¿La app está lenta, qué hago?",
+    "answer": "1. Cierra otras aplicaciones en segundo plano 2. Verifica tu conexión a internet 3. Reinicia tu dispositivo",
+    "keywords": [
+      "app",
+      "lenta"
+    ]
+  },
+  {
+    "id": 57,
+    "section": "Problemas Técnicos",
+    "question": "¿Cómo actualizo la app?",
+    "answer": "La app verifica actualizaciones automáticamente al iniciar. Si hay una actualización disponible, se te notificará. También puedes actualizarla desde Google Play Store.",
+    "keywords": [
+      "actualizo",
+      "app"
+    ]
+  },
+  {
+    "id": 58,
+    "section": "Datos del ISTG",
+    "question": "¿Cuál es el nombre completo del instituto?",
+    "answer": "Instituto Superior Tecnológico Guayaquil (ISTG).",
+    "keywords": [
+      "cual",
+      "nombre",
+      "completo",
+      "instituto"
+    ]
+  },
+  {
+    "id": 59,
+    "section": "Datos del ISTG",
+    "question": "¿Cuál es el sitio web de la app?",
+    "answer": "[https://emprendeistg.com/](https://emprendeistg.com/)",
+    "keywords": [
+      "cual",
+      "sitio",
+      "web",
+      "app"
+    ]
+  },
+  {
+    "id": 60,
+    "section": "Datos del ISTG",
+    "question": "¿Cómo contacto al equipo de desarrollo?",
+    "answer": "A través del repositorio del proyecto en GitHub: [https://github.com/semilleroappmoviles/EmprendeISTG](https://github.com/semilleroappmoviles/EmprendeISTG)",
+    "keywords": [
+      "contacto",
+      "equipo",
+      "desarrollo"
+    ]
+  }
+]
