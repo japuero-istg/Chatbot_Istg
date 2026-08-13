@@ -22,4 +22,5 @@ val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
 val ColorUserMessage = AccentBlue
-val ColorModelMessage = SurfaceCard
+// Burbuja del asistente: gris oscuro con texto claro (alto contraste y legible).
+val ColorModelMessage = Color(0xFF262A32)

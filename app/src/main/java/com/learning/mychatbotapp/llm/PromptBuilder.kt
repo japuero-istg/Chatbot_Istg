@@ -2,10 +2,13 @@ package com.learning.mychatbotapp.llm
 
 import com.learning.mychatbotapp.data.FaqRetriever
 
-/** Mensaje fijo usado cuando el retriever no encuentra nada relevante. */
+/** Capa 6: mensaje final de respaldo (más útil que la versión anterior).
+ *  Se usa como centinela del LLM cuando el contexto no resuelve la pregunta
+ *  y como red de seguridad última. */
 const val FALLBACK_ANSWER =
-    "No tengo información sobre eso, pero puedo ayudarte con negocios, " +
-    "búsqueda, favoritos, calificaciones, ofertas o tu perfil en Emprende ISTG."
+    "No tengo información sobre eso todavía. Puedo ayudarte con el registro y tu " +
+    "cuenta, publicar y gestionar tu negocio, buscar y filtrar emprendimientos, " +
+    "favoritos, calificaciones, ofertas y tu perfil. ¿Sobre cuál quieres que te explique?"
 
 object PromptBuilder {
 

@@ -1,0 +1,19 @@
+{
+  "name": "emprendeistg-faq-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Panel web para editar faq.json y faq_aliases.json de la app Emprende ISTG ChatBot",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "test": "playwright test",
+    "capture": "bash scripts/capture.sh"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0"
+  }
+}

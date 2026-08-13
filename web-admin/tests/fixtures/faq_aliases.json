@@ -1,0 +1,16 @@
+[
+  {
+    "entryId": 101,
+    "aliases": [
+      "prueba uno",
+      "pregunta 1"
+    ]
+  },
+  {
+    "entryId": 102,
+    "aliases": [
+      "prueba dos",
+      "pregunta 2"
+    ]
+  }
+]

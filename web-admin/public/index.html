@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emprende ISTG · Admin FAQ</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Emprende ISTG · Admin FAQ</h1>
+    <div class="actions">
+      <button id="newBtn">+ Nueva entrada</button>
+      <span id="status"></span>
+    </div>
+  </header>
+
+  <main>
+    <section id="listPanel" class="panel">
+      <input id="search" type="search" placeholder="Buscar en preguntas..." />
+      <div id="list"></div>
+    </section>
+
+    <section id="formPanel" class="panel">
+      <h2 id="formTitle">Editar entrada</h2>
+      <form id="form">
+        <label>ID <input id="f_id" type="number" readonly /></label>
+        <label>Sección <input id="f_section" list="sections" /></label>
+        <datalist id="sections"></datalist>
+        <label>Pregunta <textarea id="f_question" rows="2" required></textarea></label>
+        <label>Respuesta <textarea id="f_answer" rows="6" required></textarea></label>
+        <label>Keywords (coma) <input id="f_keywords" /></label>
+        <label>Aliases (uno por línea) <textarea id="f_aliases" rows="5"></textarea></label>
+        <div class="formActions">
+          <button type="submit">Guardar</button>
+          <button type="button" id="deleteBtn">Eliminar</button>
+          <button type="button" id="cancelBtn">Cancelar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

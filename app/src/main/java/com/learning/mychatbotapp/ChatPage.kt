@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.border
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
@@ -162,10 +163,10 @@ fun MessageRow(messageModel: MessageModel) {
         modifier = Modifier
             .fillMaxWidth()
             .padding(
-                start = if (isModel) 8.dp else 70.dp,
-                end = if (isModel) 70.dp else 8.dp,
-                top = 8.dp,
-                bottom = 8.dp
+                start = if (isModel) 8.dp else 64.dp,
+                end = if (isModel) 64.dp else 8.dp,
+                top = 12.dp,
+                bottom = 12.dp
             ),
         horizontalArrangement = if (isModel) Arrangement.Start else Arrangement.End,
         verticalAlignment = Alignment.Bottom
@@ -175,15 +176,20 @@ fun MessageRow(messageModel: MessageModel) {
                 painter = painterResource(id = R.drawable.robot_face_logo),
                 contentDescription = stringResource(R.string.assistant),
                 modifier = Modifier
-                    .size(28.dp)
+                    .size(32.dp)
                     .clip(CircleShape)
             )
         }
         Box(
             modifier = Modifier
-                .padding(horizontal = 8.dp)
+                .padding(horizontal = 10.dp)
                 .clip(RoundedCornerShape(20.dp))
                 .background(if (isModel) ColorModelMessage else ColorUserMessage)
+                .border(
+                    width = 1.dp,
+                    color = if (isModel) TextOnDark.copy(alpha = 0.06f) else Color.White.copy(alpha = 0.15f),
+                    shape = RoundedCornerShape(20.dp)
+                )
                 .padding(16.dp)
         ) {
             Column {
@@ -191,6 +197,8 @@ fun MessageRow(messageModel: MessageModel) {
                     Text(
                         text = messageModel.message,
                         fontWeight = FontWeight.W500,
+                        fontSize = 16.sp,
+                        lineHeight = 22.sp,
                         color = TextOnDark
                     )
                 }

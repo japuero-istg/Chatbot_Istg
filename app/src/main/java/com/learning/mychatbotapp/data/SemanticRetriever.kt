@@ -7,8 +7,11 @@ class SemanticRetriever(
     private val entries: List<FaqEntry>,
     private val embeddingEngine: EmbeddingEngine
 ) {
-    /** Similitud mínima (0.0 a 1.0) para considerar una entrada relevante. */
-    private val minSimilarity = 0.5
+    /** Similitud mínima (0.0 a 1.0) para considerar una entrada relevante.
+     *  Capa 3 (Plan B): bajado de 0.5 a 0.35 para ganar recall en paráfrasis
+     *  que la Capa 1 (aliases) no cubre. El control de calidad de ChatViewModel
+     *  y la Capa 1 (score 10f) mitigan falsos positivos. */
+    private val minSimilarity = 0.35
 
     private var cachedEmbeddings: List<Pair<FaqEntry, Embedding>>? = null
 

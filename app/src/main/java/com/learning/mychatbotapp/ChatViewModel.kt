@@ -10,8 +10,10 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewModelScope
 import android.util.Log
+import com.learning.mychatbotapp.data.FaqAliasRepository
 import com.learning.mychatbotapp.data.FaqRepository
 import com.learning.mychatbotapp.data.FaqRetriever
+import com.learning.mychatbotapp.data.InputClassifier
 import com.learning.mychatbotapp.data.SemanticRetriever
 import com.learning.mychatbotapp.llm.EmbeddingEngine
 import com.learning.mychatbotapp.llm.FALLBACK_ANSWER
@@ -50,7 +52,8 @@ class ChatViewModel(private val appContext: Context) : ViewModel() {
         private set
 
     private val faqRepository = FaqRepository(appContext)
-    private val retriever by lazy { FaqRetriever(faqRepository.getAll()) }
+    private val faqAliasRepository = FaqAliasRepository(appContext)
+    private val retriever by lazy { FaqRetriever(faqRepository.getAll(), faqAliasRepository.getAll()) }
     private val modelManager = ModelManager(appContext)
     private var llmEngine: LlmEngine? = null
     // Búsqueda semántica (respaldo del buscador por palabras clave).
@@ -111,48 +114,52 @@ class ChatViewModel(private val appContext: Context) : ViewModel() {
     }
 
     fun sendMessage(question: String) {
-        val engine = llmEngine
-        if (modelState != ModelState.Ready || engine == null) {
-            messageList.add(MessageModel(question, "user"))
-            messageList.add(
-                MessageModel(
-                    "El asistente todavía se está preparando, espera un momento e inténtalo de nuevo.",
-                    "model"
-                )
-            )
-            return
-        }
-
         viewModelScope.launch {
             ttsEvents.tryEmit(TtsEvent.Stop)
             messageList.add(MessageModel(question, "user"))
             val startTime = SystemClock.elapsedRealtime()
             messageList.add(MessageModel("Escribiendo...", "model", startedAtMs = startTime))
 
+            val normalized = InputClassifier.normalize(question)
+            val intent = InputClassifier.classify(normalized)
+            Log.d("InputClassifier", "intent=$intent normalized='$normalized'")
+
             // Todo el flujo en try/catch: si algo falla se muestra un error claro en vez
             // de dejar el "Escribiendo..." colgado (ni texto ni voz).
             val answer = try {
-                var matches = retriever.search(question)
-                val via = if (matches.isEmpty()) "semantico" else "palabras"
-                if (matches.isEmpty()) {
-                    matches = semanticRetriever?.search(question) ?: emptyList()
-                }
-                Log.d("Retrieval", "capa=$via matches=${matches.size} scores=${matches.map { it.score }}")
-                if (matches.isEmpty()) {
-                    FALLBACK_ANSWER
+                val trivial = InputClassifier.replyFor(intent)
+                if (trivial != null) {
+                    trivial
                 } else {
-                    val official = matches.first().entry.answer
-                    val prompt = PromptBuilder.build(question, matches.take(2))
-                    val generated = engine.generate(prompt)
-                    // Respaldo de calidad: si el modelo falla (vacío, fallback genérico,
-                    // eco de la pregunta o texto insignificante), se muestra la respuesta
-                    // oficial del FAQ. Así las cards del menú responden SIEMPRE.
-                    val quality = generated.isNotBlank() &&
-                        generated != FALLBACK_ANSWER &&
-                        generated.trim() != question.trim() &&
-                        generated.length >= 15
-                    Log.d("ChatViewModel", "modelo=${if (quality) "ok" else "fallo"} generatedChars=${generated.length} -> ${if (quality) "respuesta_modelo" else "respuesta_oficial"}")
-                    if (quality) generated else official
+                    val engine = llmEngine
+                    if (modelState != ModelState.Ready || engine == null) {
+                        "El asistente todavía se está preparando, espera un momento e inténtalo de nuevo."
+                    } else {
+                        var matches = retriever.search(normalized)
+                        val via = if (matches.isEmpty()) "semantico" else "palabras"
+                        if (matches.isEmpty()) {
+                            matches = semanticRetriever?.search(normalized) ?: emptyList()
+                        }
+                        Log.d("Retrieval", "capa=$via matches=${matches.size} scores=${matches.map { it.score }}")
+                        if (matches.isEmpty()) {
+                            Log.d("Retrieval", "sin match en ninguna capa -> respuesta guiada (Capa 4)")
+                            buildGuidedResponse()
+                        } else {
+                            val official = matches.first().entry.answer
+                            val prompt = PromptBuilder.build(normalized, matches.take(2))
+                            val generated = engine.generate(prompt)
+                            // Respaldo de calidad: si el modelo falla (vacío, fallback genérico,
+                            // eco de la pregunta o texto insignificante), se muestra la respuesta
+                            // oficial del FAQ. Así las cards del menú responden SIEMPRE.
+                        val echo = InputClassifier.isEcho(generated, question)
+                        val quality = generated.isNotBlank() &&
+                            generated != FALLBACK_ANSWER &&
+                            !echo &&
+                            generated.length >= 15
+                        Log.d("ChatViewModel", "modelo=${if (quality) "ok" else "fallo"} echo=$echo generatedChars=${generated.length} -> ${if (quality) "respuesta_modelo" else "respuesta_oficial"}")
+                            if (quality) generated else official
+                        }
+                    }
                 }
             } catch (e: Exception) {
                 Log.e("ChatViewModel", "Error generando respuesta", e)
@@ -164,6 +171,16 @@ class ChatViewModel(private val appContext: Context) : ViewModel() {
             messageList.add(MessageModel(answer, "model", elapsedMs, startTime))
             ttsEvents.tryEmit(TtsEvent.Speak(answer))
         }
+    }
+
+    /** Capa 4: respuesta guiada honesta cuando ninguna capa (alias/semántica)
+     *  encontró un match. Enumera las secciones reales del FAQ y ayuda al
+     *  usuario a reformular, en vez de dejarlo sin respuesta útil. */
+    private fun buildGuidedResponse(): String {
+        val temas = categories.joinToString("\n") { "• ${it.section}" }
+        return "Todavía no tengo una respuesta para eso, pero estos son los temas " +
+            "en los que te puedo ayudar:\n$temas\n" +
+            "Elige uno o reformula tu pregunta con otras palabras."
     }
 
     override fun onCleared() {
