@@ -31,6 +31,13 @@ class InputClassifierTest {
     }
 
     @Test
+    fun saludoHola_tieneRespuestaDeSaludo() {
+        val response = InputClassifier.replyFor(InputClassifier.Intent.GREETING)
+        assertNotNull(response)
+        assertTrue(response!!.contains("Hola"))
+    }
+
+    @Test
     fun graciasSolo_esThanks() {
         assertEquals(
             InputClassifier.Intent.THANKS,
